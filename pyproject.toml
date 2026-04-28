@@ -1,0 +1,22 @@
+cat > pyproject.toml << 'EOF'
+[project]
+name = "etf-copilot"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "yfinance>=0.2.40",
+    "duckdb>=1.0.0",
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+    "loguru>=0.7.0",
+    "pandas>=2.0.0",
+    "tenacity>=8.0.0",
+    "fredapi>=0.5.0",
+    "pyarrow>=14.0.0",
+    "pytest>=8.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+EOF
